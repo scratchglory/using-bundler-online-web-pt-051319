@@ -1,4 +1,5 @@
 require 'bundler'
+require 'pry'
 
 describe "Bundler" do
   before :all do
@@ -11,6 +12,7 @@ describe "Bundler" do
   describe "Gemfile" do
     before :all do
       @gemfile_text = File.read('Gemfile')
+  # binding.pry
     end
 
     it "has correct syntax" do
